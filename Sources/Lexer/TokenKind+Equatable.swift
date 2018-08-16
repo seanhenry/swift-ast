@@ -14,10 +14,7 @@
    limitations under the License.
 */
 
-extension Token.Kind: Equatable {
-  public static func ==(lhs: Token.Kind, rhs: Token.Kind) -> Bool {
-    return lhs.isEqual(to: rhs)
-  }
+extension Token.Kind {
 
   public func isEqual(toKindOf kind: Token.Kind) -> Bool {
     switch (self, kind) {
